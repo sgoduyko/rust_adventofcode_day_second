@@ -70,5 +70,14 @@ fn calc_safe_report_count(reports: &[[i32; 5]]) -> i32 {
 }
 
 fn main() {
-    println!("Hello, world!");
+    let reports = [
+        [7, 6, 4, 2, 1],
+        [1, 2, 7, 8, 9],
+        [9, 7, 6, 2, 1],
+        [1, 3, 2, 4, 5],
+        [8, 6, 4, 4, 1],
+        [1, 3, 6, 7, 9],
+    ];
+    let safe_reports_count = calc_safe_report_count(&reports);
+    println!("safe reports count={safe_reports_count}")
 }
